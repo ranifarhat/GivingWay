@@ -2,17 +2,17 @@
 	width: 1.4em;
 	/*height: 1em;
 	margin: 1em;*/
-	filter: invert(100%);
+	/*filter: invert(100%);*/
 }
 
 #btn-ddl {
 	position: absolute;
 	right: 0;
 	padding: 10px;
-	background-color: #00d8ae;
+	background-color: white;
 	border-radius: 4px;
-	margin-top: 8px;
-	margin-right: 15px;
+	/*margin-top: 8px;*/
+	margin-right: 0.25em;
 	margin-bottom: 8px;
 	border: none;
 }
@@ -23,10 +23,16 @@
 
 .navbar {
 	position: absolute;
-	border-bottom: 1px solid lightgrey;
-	opacity: 0.8;
-	background-color: red;
-	filter: alpha(opacity=80);
+	/*border-bottom: 1px solid lightgrey;*/
+	filter: alpha(opacity=40);
+	opacity: 0.4;
+	-webkit-transition: opacity 0.4s, filter;
+}
+
+.navbar:hover {
+	filter: alpha(opacity=100);
+	opacity: 1;
+	-webkit-transition: opacity 0.4s;
 }
 
 #gw-img {
@@ -35,26 +41,30 @@
 
 /* ---- Background Photo ---- */
 
+.parallax {
+	background-attachment: fixed;
+	transform: translateZ(-1px);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 .bg-img {
 	background-image: url('https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-position: 50% 25%;
-	background-attachment: fixed;
-	transform: translateZ(-1px);
-	perspective: 1000px;
 	color: white;
 	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 	vertical-align: middle;
-	background-color: #162044;
-	padding-top: 21em;
-	padding-bottom: 21em;
+	padding-top: 19em;
+	padding-bottom: 19em;
 	text-align: center;
 	text-shadow: 2px 0px 4px #686868;
-	/*height: 25em;*/
+	box-shadow: 0px 0px 5px black;
+	/*background-color: #162044;*/
 }
 
 .gw-heading {
-	font-size: 5em;
+	font-size: 500em;
 	/*background-color: red;*/
 	width: 100%;
 	/*-webkit-text-stroke: 0.2px black;*/
@@ -70,6 +80,24 @@
 	mix-blend-mode: normal;
 }
 
+/* ---- Instructions Part ----*/
+
+.inst {
+	font-size: 1.5rem;
+}
+
+
+
+
+/* ---- Random Classes ----*/
+
 .example {
 	/*background-color: red;*/
+}
+
+.banana {
+	background-image: url(https://images.pexels.com/photos/1556796/pexels-photo-1556796.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	color:white;
+	margin:0px;
+	padding:0;
 }
