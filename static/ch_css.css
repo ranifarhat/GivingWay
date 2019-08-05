@@ -22,7 +22,11 @@
 }
 
 .navbar {
+	position: absolute;
 	border-bottom: 1px solid lightgrey;
+	opacity: 0.8;
+	background-color: red;
+	filter: alpha(opacity=80);
 }
 
 #gw-img {
@@ -32,6 +36,40 @@
 /* ---- Background Photo ---- */
 
 .bg-img {
-	background-image: url('https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
-	
+	background-image: url('https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-position: 50% 25%;
+	background-attachment: fixed;
+	transform: translateZ(-1px);
+	perspective: 1000px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	vertical-align: middle;
+	background-color: #162044;
+	padding-top: 21em;
+	padding-bottom: 21em;
+	text-align: center;
+	text-shadow: 2px 0px 4px #686868;
+	/*height: 25em;*/
+}
+
+.gw-heading {
+	font-size: 5em;
+	/*background-color: red;*/
+	width: 100%;
+	/*-webkit-text-stroke: 0.2px black;*/
+}
+
+.mbm {
+	/*mix-blend-mode: overlay;*/
+}
+
+#gr-hl {
+	color: #00d8ae;
+	display: inline-block;
+	mix-blend-mode: normal;
+}
+
+.example {
+	/*background-color: red;*/
 }
