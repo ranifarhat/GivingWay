@@ -1,8 +1,5 @@
 #btn-ddl img {
 	width: 1.4em;
-	/*height: 1em;
-	margin: 1em;*/
-	/*filter: invert(100%);*/
 }
 
 #btn-ddl {
@@ -11,7 +8,6 @@
 	padding: 10px;
 	background-color: white;
 	border-radius: 4px;
-	/*margin-top: 8px;*/
 	margin-right: 0.25em;
 	margin-bottom: 8px;
 	border: none;
@@ -188,27 +184,20 @@
 	font-size: 2.25rem;
 	border-radius: 10px;
 	padding: 6px;
-	/*color: initial;*/
 	font-weight: bolder;
-	text-shadow: 0px 0px 10px #00b08e;
-	/*background-color: #00b08e;*/
 }
 
 .circle {
-	/*background-color: red;*/
 	display: inline-block;
 	border: 8px double #00d8ae;
 	font-size: 1.2em;
 	width: 2em;
 	height: 2em;
-	/*position: absolute;*/
-	/*top: -2em;*/
 	border-radius: 100%;
 }
 
 .square {
 	background-color: red;
-	/*display: inline-block;*/
 	padding-left: 5em;
 	margin-top: 20em;
 }
@@ -216,10 +205,6 @@
 .pd {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-}
-
-.example {
-	/*background-color: red;*/
 }
 
 .banana {
@@ -231,4 +216,10 @@
 
 .bg-r {
 	background-color: red;
+}
+
+.gr-sh {
+	box-shadow: 0 0 20px 5px lightgreen;
+	transform: scale(1.05);
+	-webkit-transition: box-shadow 0.25s, transform 0.25s;
 }

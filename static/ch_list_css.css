@@ -5,6 +5,7 @@
 	font-size: 1.5rem;
 	background-color: lightgray;
 	margin: 1rem;
+	margin-top: 2.5rem;
 	position: relative;
 	display: inline-flex;
 	flex-direction: column-reverse;
@@ -13,9 +14,10 @@
 
 .a {
 	background-image: url('https://images.pexels.com/photos/802221/pexels-photo-802221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-	background-size: 150%;
+	background-size: 160%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 10px black;
 }
 
 .b {
@@ -23,6 +25,7 @@
 	background-size: 150%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 10px black;
 }
 
 .c {
@@ -30,6 +33,7 @@
 	background-size: 150%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	box-shadow: 0px 0px 10px black;
 }
 
 .ch-text {
@@ -42,11 +46,31 @@
 	position: absolute;
 	background-color: rgba(0, 0, 0, 0.6);
 	padding-bottom: 0%;
-	margin-top: 0%;
-	-webkit-transition: padding-bottom 0.25s;
+	/*margin-top: 0%;*/
+	-webkit-transition: padding-bottom 0.25s, margin-top 0.25s;
 }
+
 .cont-ch:hover {
-	padding-bottom: 66.5%;
-	margin-top: 33.75%;
-	-webkit-transition: padding-bottom 0.25s;
+	padding-bottom: 33.75%;
+	-webkit-transition: padding-bottom 0.5s, background-color 0.5s, mix-blend-mode 0.5s;
+}
+
+.ch-active {
+	background-image: url("");
+}
+
+.a {
+	/*transform: scale(1.2);*/
+}
+
+.sh {
+	margin: 1rem;
+	font-size: 1.25rem;
+	/*border-radius: 10px;*/
+	/*border: 2px solid black;*/
+	/*box-shadow: 0px 0px 10px black;*/
+}
+
+.info {
+	margin-top: 2rem;
 }

@@ -30,6 +30,9 @@
 	</nav>
 
 	<div class="container">
+		<div class="display-3 text-center">
+			Choose A Challenge
+		</div>
 		<!-- The Challenges -->
 		<div class="ch text-center a"><span class="ch-text cont-ch">1<br>Recycle at least 14 kilograms of plastic bottles.</span></div>
 		<div class="ch text-center b"><span class="ch-text cont-ch">2<br>Volunteer at least 10 hours at <br>food shelters/animal shelters</span></div>
@@ -37,12 +40,42 @@
 
 		<!-- The Forum -->
 
-		<form action="/action_page.php" method="get">
-			First name: <input type="text" name="fname"><br>
-			Last name: <input type="text" name="lname"><br>
-			Video: <input type="file" name="video">
-
-			<input type="submit" value="Submit">
+		<div class="small-title text-center">
+			Submit Your Information
+		</div>
+		<form action="/action_page.php" method="get" class="info">
+			<div class="row">
+				<div class="col sh">
+					First name: <input type="text" name="fname">
+				</div>
+				<div class="col sh">
+				Last name: <input type="text" name="lname">
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col sh">
+					Challenge Number: 
+				</div>
+				<div class="col sh">
+					<input type="radio" name="ch-num">1
+				</div>
+				<div class="col sh">
+					<input type="radio" name="ch-num">2
+				</div>
+				<div class="col sh">
+					<input type="radio" name="ch-num">3
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col sh">
+					Video: <input type="file" name="video">
+				</div>
+				<div class="col sh">
+					<input type="submit" value="Submit">
+				</div>
+			</div>
 		</form>
 
 	</div>
@@ -63,5 +96,8 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- Script File -->
+	<script type="text/javascript" src="{{ url_for('static', filename='ch_list_js.js') }}"></script>
 </body>
 </html>
