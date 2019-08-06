@@ -18,7 +18,7 @@
 	<!-- Navigation Bar -->
 	<nav class="navbar navbar-expand-md">
 		<!-- Brand -->
-		<a class="navbar-brand" href="#"><img id="gw-img" src="{{ url_for('static', filename='dark.png') }}"></a>
+		<a class="navbar-brand" href="https://www.givingway.com/"><img id="gw-img" src="{{ url_for('static', filename='dark.png') }}"></a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon">
@@ -35,7 +35,7 @@
 		</span>
 	</div>
 
-	<!-- some test text -->
+	<!-- CHALLENGE INSTRUCTIONS -->
 	<br><br>
 
 	<div class="inst container">
@@ -46,46 +46,65 @@
 			Choose a challenge from here!
 		</p>
 	</div>
+
 	<!-- STEPS USING COL AND ROWS BS 4 -->
 	<div class="step container-fluid">
 		<div class="row">
-			<div class="col text-center pd">Steps</div>
+			<div class="col text-center pd display-4">Steps</div>
 		</div>
 
 		<!-- Actual Steps -->
 		<div class="row">
 			<div class="col text-center pd">
-				<span class="circle">1</span>Upload the video to our challenge page
+				<span class="circle">1</span>
 			</div>
 			<div class="col text-center pd">
-				<span class="circle">2</span>Film a 2 minunte video doing a challenge
+				<span class="circle">2</span>
 			</div>
 			<div class="col text-center pd">
-				<span class="circle">3</span>Submit your details, send it
+				<span class="circle">3</span>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col text-center pd">
+				Submit your details, after choosing a challenge
+			</div>
+			<div class="col text-center pd">
+				Film a 2 minute video doing the challenge
+			</div>
+			<div class="col text-center pd">
+				Upload the video to our challenge page
 			</div>
 		</div>
 		<div class="row">
-			<div class="col text-center pd">You're done</div>
+			<div class="col text-center pd yd">You're done</div>
 		</div>
 	</div>
 	<br>
-	<div class="vid container-fluid">
-		<center><span class="v-title display-4">
-			Example Video
-		</span></center>
-		<iframe class="video" src="https://www.youtube.com/embed/PHgc8Q6qTjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<!-- Example Video -->
+	<div class="container-fluid">
+		<div class="vid">
+			<center><span class="v-title display-4">
+				Example Video
+			</span></center>
+			<span class="vid-desc">
+				<iframe class="video" src="https://www.youtube.com/embed/PHgc8Q6qTjc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<span id="desc-text">
+					<ul type="disc"><span class="small-title">Introduce yourself! (30 seconds)</span>
+						<li>Name</li>
+						<li>Age</li>
+						<li>Why you're interested in the challenge.</li>
+					</ul>
+					<ul>
+						<br>
+						<span class="small-title">Do the challenge on camera!</span><br>Show it in a creative way!
+					</ul>
+				</span>
+			</span>
+		</div>
 	</div>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-	<center><div class="circle">1</div></center>
-	<!-- <br><br> -->
-	<!-- <div class="square">test</div> -->
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 

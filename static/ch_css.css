@@ -102,45 +102,107 @@
 	margin-bottom: 2em;
 	background-color: white;
 	color: #333333;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 
 #num {
 	font-size: 2em;
 }
 
+.yd { /* you're done text */
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 2rem;
+}
+
 /* ---- Example Video ---- */
 
 .vid {
-	box-shadow: 0px -15px 25px 25px #00d8ae;
+	box-shadow: 0px -15px 50px 50px #00d8ae;
 	background-color: #00d8ae;
 	color: white;
 	padding-top: 1em;
+	/*height: 10em;*/
+	padding-bottom: 2em;
+	overflow: hidden;
 	/*display: block;*/
 }
 
 .v-title {
-	padding-bottom: 20rem;
+	/*padding-bottom: 20rem;*/
+	text-shadow: 0px 0px 10px #00b18e; 
 }
 
 .video {
-	padding-top: 2em;
-	width: 100%;
-	height: 60em;
+	/*margin-top: 2em;*/
+	/*background-color: gray;*/
+	border-radius: 10px;
+	width: 50em;
+	height: 30em;
+	display: inline-block;
+	float: left;
 }
 
+.thin {
+	height: 0.02rem;
+	background-color: black;
+	border-radius: 40%;
+	opacity: 0.4;
+}
+
+.vertical {
+	transform: rotate(90deg);
+}
+
+.vid-desc {
+	/*border: 2px solid black;*/
+	/*height: 25rem;*/
+	/*padding-top: 10rem;*/
+	/*padding-bottom: 10rem;*/
+	/*background-color: red;*/
+	/*float: right;*/
+	margin-top: 2em;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #00b08e;
+	width: 100%;
+	font-size: 1.4rem;
+	display: inline-block;
+}
+
+#desc-text {
+	vertical-align: middle;
+	/*background-color: red;*/
+	position: relative;
+	margin-top: 2em;
+	left: 2em;
+	margin-bottom: 2em;
+	padding-left: 12rem;
+	font-size: 2rem;
+	padding-top: 10.5rem;
+	padding-bottom: 1rem;
+}
 /* ---- Random Classes ----*/
+
+.small-title {
+	text-transform: capitalize;
+	font-size: 2.25rem;
+	border-radius: 10px;
+	padding: 6px;
+	/*color: initial;*/
+	font-weight: bolder;
+	text-shadow: 0px 0px 10px #00b08e;
+	/*background-color: #00b08e;*/
+}
 
 .circle {
 	/*background-color: red;*/
 	display: inline-block;
 	border: 8px double #00d8ae;
-	font-size: 2em;
-	/*width: 2em;*/
-	padding-right: 0.5em;
-	padding-left: 0.5em; 
-	padding-top: 0.1em;
-	padding-bottom: 0.1em;
+	font-size: 1.2em;
+	width: 2em;
+	height: 2em;
+	/*position: absolute;*/
+	/*top: -2em;*/
 	border-radius: 100%;
 }
 
@@ -166,3 +228,4 @@
 	margin:0px;
 	padding:0;
 }
+
