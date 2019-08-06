@@ -1,0 +1,43 @@
+/* ---- Challenges Containers ---- */
+.ch {
+	width: 20rem;
+	height: 20rem;
+	font-size: 1.5rem;
+	background-color: lightgray;
+	margin: 1rem;
+	display: inline-flex;
+	flex-direction: column-reverse;
+	border-radius: 20px;
+}
+
+.a {
+	background-image: url('https://images.pexels.com/photos/802221/pexels-photo-802221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 150%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.b {
+	background-image: url('https://images.pexels.com/photos/2747421/pexels-photo-2747421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 150%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.c {
+	background-image: url('https://images.pexels.com/photos/589802/pexels-photo-589802.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	background-size: 150%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#ch-text {
+	color: white;
+	border-radius: 20px;
+	padding-left:
+}
+
+#cont-ch {
+	background-color: rgba(0, 0, 0, 0.6);
+	
+}
