@@ -69,4 +69,41 @@
 /* ---- INFORMATION FORUM ---- */
 input[type=text] {
 	border-radius: 10px;
+	border: 2px solid #00d8ae;
+	margin-left: 1em;
+	box-shadow: 10px 10px 10px -10px gray;
+	transform: scale(1);
+	-webkit-transition: background-color 0.5s, color 0.5s, transform 0.5s, box-shadow 0.5s, margin-left 0.5s;
+}
+
+input[type=text]:active {
+	/*background-color: lightgray;*/
+	/*color: white;*/
+	/*transform: scale(1.2);*/
+	-webkit-transition: background-color 0.05s, color 0.05s, transform 0.05s, box-shadow 0.05s, margin-left 0.1s;
+}
+
+input[type=text]:focus {
+	color: #00d8ae;
+	transform: scale(1.05);
+	box-shadow: 10px 10px 10px gray;
+	-webkit-transition: background-color 0.1s, color 0.1s, transform 0.1s, box-shadow 0.1s, margin-left 0.1s;
+}
+
+.inp-btn {
+	border-radius: 8px;
+	display: inline-block;
+	border: 2px solid #00d8ae;
+	box-shadow: 10px 10px 10px -10px gray;
+	outline: none;
+}
+
+input {
+	outline: none;
+}
+
+.inp-btn:active {
+	background-color: gray;
+	transform: scale(0.98);
+	box-shadow: 10px 10px 10px gray;
 }

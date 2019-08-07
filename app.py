@@ -1,6 +1,8 @@
 from databases import *
-from flask import redirect, Flask, render_template, url_for, request
+from flask import redirect, Flask, flash, render_template, url_for, request
+
 app = Flask(__name__)
+app.secret_key = b'chicken'
 
 @app.route("/")
 def challenge():
@@ -22,12 +24,15 @@ def challenger_info():
 		name = request.form['fname']
 		famname = request.form['lname']
 		ch_num = request.form['ch-num']
-		# vid = request.form['video']
-		add_challenger(name, famname, ch_num)
-		return redirect("/ch-sub-completed")
+		vid = request.form['video']
+		if(name == "" or famname == "" or ch_num == None or vid == None):
+			return render_template("ch_lists.html")
+		else:
+			add_challenger(name, famname, ch_num, vid)
+			return redirect("/ch-sub-completed")
 
 
-delete_all()
+# delete_all()
 
 print(query_all())
 

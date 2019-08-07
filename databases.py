@@ -8,7 +8,7 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def add_challenger(name, lastn, ch_num):#, vid
+def add_challenger(name, lastn, ch_num, vid):
 	"""
 	Add a student to the database, given
 	their name, year, and whether they have
@@ -17,8 +17,8 @@ def add_challenger(name, lastn, ch_num):#, vid
 	ch_object = Challenger(
 		name=name,
 		lastn=lastn,
-		ch_num=ch_num)
-		# vid=vid)
+		ch_num=ch_num,
+		vid=vid)
 	session.add(ch_object)
 	session.commit()
 

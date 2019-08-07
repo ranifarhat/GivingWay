@@ -4,6 +4,8 @@
 	<!-- Local CSS File  -->
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ch_css.css') }}">
 
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ch_css_comp.css') }}">	
+
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ch_list_css.css') }}">
 
 	<!-- Required meta tags -->
@@ -22,27 +24,24 @@
 		<!-- Brand -->
 		<a class="navbar-brand" href="https://www.givingway.com/"><img id="gw-img" src="{{ url_for('static', filename='dark.png') }}"></a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 			<span class="navbar-toggler-icon">
 			 	<button id="btn-ddl"><img src="https://image.flaticon.com/icons/png/512/56/56763.png"></button>
 			 	</span>
-		</button>
+		</button> -->
 	</nav>
 
 	<!-- ID NUMBER -->
 	<div class="container-fluid text-center">
-		<div class="display-3">
-			Hello {{ last_ch.name }} {{ last_ch.lastn }} You're number {{ last_ch.ch_id }}!
+		<div class="rb-bg">
 		</div>
-		<div class="display-4">
-			Your Video has been submitted! <br>Good Luck
-		</div>
-		<br>
-		<br>
-		<div class="re">
-			<script>
-				countDown();
-			</script>
+		<div class="t-rb">
+			<div class="display-3">
+				Hello {{ last_ch.name }} {{ last_ch.lastn }} You're number {{ last_ch.ch_id }}!
+			</div>
+			<div class="display-4">
+				Your Video has been submitted! <br>Good Luck
+			</div>
 		</div>
 	</div>
 
