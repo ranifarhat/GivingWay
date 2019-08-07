@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean
+from sqlalchemy import Column, Integer, String, Boolean, PickleType
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy import create_engine
@@ -23,12 +23,14 @@ class Challenger(Base):
 	name = Column(String)
 	lastn = Column(String)
 	ch_num = Column(Integer)
-	vid = Column(File)
+	vid = Column(PickleType)
 
 	def __repr__(self):
-		return ("Student Name: {}\n"
-				"Student Year: {} \n"
-				"Has Finished Lab: {}").format(
+		return ("Challenger ID: {}\n"
+				"Challenger Name: {}\n"
+				"Challenge Chosen: {}\n"
+				"Video: {}").format(
+					self.ch_id,
 					self.name,
-					self.year,
-					self.finished_lab)
+					self.ch_num,
+					self.vid)

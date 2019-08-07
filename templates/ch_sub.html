@@ -29,56 +29,14 @@
 		</button>
 	</nav>
 
-	<div class="container">
-		<div class="display-3 text-center">
-			Choose A Challenge
+	<!-- ID NUMBER -->
+	<div class="container-fluid text-center">
+		<div class="display-3">
+			Your ID {{ last_ch.ch_id }}
 		</div>
-		<!-- The Challenges -->
-		<center>
-			<div class="ch text-center a"><span class="ch-text cont-ch">1<br>Recycle at least 14 kilograms of plastic bottles.</span></div>
-			<div class="ch text-center b"><span class="ch-text cont-ch">2<br>Volunteer at least 10 hours at <br>food shelters/animal shelters</span></div>
-			<div class="ch text-center c"><span class="ch-text cont-ch">3<br>Plant at least 10 trees with daily nourish and care.</span></div>
-		</center>
-		<!-- The Forum -->
-
-		<div class="small-title text-center">
-			Submit Your Information
+		<div class="display-4">
+			Your Video has been submitted! <br>Good Luck
 		</div>
-		<form action="/ch-sub" method="post" class="info">
-			<div class="row text-center">
-				<div class="col sh">
-					First name: <input type="text" name="fname">
-				</div>
-				<div class="col sh">
-				Last name: <input type="text" name="lname">
-				</div>
-			</div>
-		
-			<div class="row text-center">
-				<div class="col sh">
-					Challenge Number: 
-				</div>
-				<div class="col sh">
-					<input type="radio" name="ch-num" value=1>1
-				</div>
-				<div class="col sh">
-					<input type="radio" name="ch-num" value=2>2
-				</div>
-				<div class="col sh">
-					<input type="radio" name="ch-num" value=3>3
-				</div>
-			</div>
-		
-			<div class="row text-center">
-				<!-- <div class="col sh">
-					Video: <input type="file" name="video">
-				</div> -->
-				<div class="col sh">
-					<input type="submit" value="Submit">
-				</div>
-			</div>
-		</form>
-
 	</div>
 
 	<!-- ONLINE TRAJECTORIES AND LIBRARIES -->

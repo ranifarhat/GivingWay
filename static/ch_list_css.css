@@ -54,15 +54,6 @@
 	padding-bottom: 33.75%;
 	-webkit-transition: padding-bottom 0.5s, background-color 0.5s, mix-blend-mode 0.5s;
 }
-
-.ch-active {
-	background-image: url("");
-}
-
-.a {
-	/*transform: scale(1.2);*/
-}
-
 .sh {
 	margin: 1rem;
 	font-size: 1.25rem;
@@ -73,4 +64,9 @@
 
 .info {
 	margin-top: 2rem;
+}
+
+/* ---- INFORMATION FORUM ---- */
+input[type=text] {
+	border-radius: 10px;
 }
